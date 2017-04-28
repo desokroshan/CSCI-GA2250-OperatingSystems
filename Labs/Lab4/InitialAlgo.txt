@@ -1,0 +1,29 @@
+
+Following is an initial Algo Idea:
+
+Two methods mainly
+- Main method to act as the Driver;
+- A Pager Routine
+
+Data Structures:
+
+Algorithm:
+
+- Read the input and store it in Data Strucutres
+- Print the input
+- While the queue is not empty(we need to have a queue for the processes)
+	- get the first element
+	- q=3
+	- while(process's remaining reference!=0 or q!=0)
+		- invoke Pager(with required reference information)
+	if (process remaining reference==0){do not add to the queue}
+	else(q==0){Add to the queue}
+*************End of main Algorithm*********************
+
+Pager Routine(with required reference information):
+- if page not in the frame table:
+	if no empty frame:
+		invoke Page replacement Algorithm
+	empty frame: just update the frame table
+
+The Algorithm needs more refinement:
