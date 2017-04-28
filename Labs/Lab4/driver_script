@@ -1,0 +1,26 @@
+#!/bin/bash
+# Script accepts a filename and runs
+# FCFS, Round Robin, Uniprogramming, SJF on it in order
+javac Scheduler.java
+#java Scheduler input1.txt fcfs
+#java Scheduler input1.txt rr
+#java Scheduler input1.txt uni
+#java Scheduler input1.txt sjf
+
+java Main 10 10 20 1 10 lru 0
+java Main 10 10 10 1 100 lru 0
+java Main 10 10 10 2 10 lru 0
+java Main 20 10 10 2 10 lru 0
+java Main 20 10 10 2 10 random 0
+java Main 20 10 10 2 10 lifo 0
+java Main 20 10 10 3 10 lru 0
+java Main 20 10 10 3 10 lifo 0
+java Main 20 10 10 4 10 lru 0
+java Main 20 10 10 4 10 random 0
+java Main 90 10 40 4 100 lru 0
+java Main 40 10 90 1 100 lru 0
+java Main 40 10 90 1 100 lifo 0
+java Main 800 40 400 4 5000 lru 0
+java Main 10 5 30 4 3 random 0
+java Main 1000 40 400 4 5000 lifo 0
+
